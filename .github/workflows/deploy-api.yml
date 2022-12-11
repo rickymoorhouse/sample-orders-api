@@ -13,8 +13,8 @@ jobs:
     - name: Deploy API to Sandbox
       uses: ibm-apiconnect/actions@main
       with:
-        manager-host: api-manager.us-east-a.apiconnect.automation.ibm.com
-        api-host: platform-api.us-east-a.apiconnect.automation.ibm.com
+        manager-host: api-manager.eu-west-a.apiconnect.automation.ibm.com
+        api-host: platform-api.eu-west-a.apiconnect.automation.ibm.com
         provider-org: 'demo'
         catalog: 'sandbox'
         apikey: ${{ secrets.apikey }}
@@ -47,10 +47,10 @@ jobs:
     - name: Deploy API to Showcase
       uses: ibm-apiconnect/actions@main
       with:
-        manager-host: api-manager.us-east-a.apiconnect.automation.ibm.com
-        api-host: platform-api.us-east-a.apiconnect.automation.ibm.com
+        manager-host: api-manager.eu-west-a.apiconnect.automation.ibm.com
+        api-host: platform-api.eu-west-a.apiconnect.automation.ibm.com
         provider-org: 'demo'
-        catalog: 'showcase'
+        catalog: 'demo'
         apikey: ${{ secrets.apikey }}
         product-file: 'product.yaml'
 
